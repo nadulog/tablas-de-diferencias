@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tabla de diferencias</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <table border="1">
+
+        <tr class="columna-principal" >
+            <th></th>
+            <th><center>Para que se usan</center></th>
+            <th></center>Ventajas</center></th>
+            <th></center>Desventajas</center></th>
+        </tr>
+    
+        <tr class="columna-px">
+            <td></center>PX</center></td>
+            <td >Al usar pixeles para definir las dimensiones de los objetos y los estilos de fuente no solo estamos definiendo tamaños rígidos, sino que también estamos ignorando las configuraciones que cada usuario pueda tener en su navegador.</td>
+            <td>Es util para mantener un tamaño consistente para algunos elementos.</td>
+            <td>El uso de px puede ser problemático para los sitios receptivos, pero es util para mantener un tamaño consistente para algunos elementos.</td>
+        </tr>
+
+        <tr class="columna-em">
+            <td></center>EM</center></td>
+            <td >Es recomendable usar la unidad de medida em para definir los tamaños de fuente, los altos de línea y también para elementos de diseño que no requieran ser muy exactos o que requieran una medida que tenga relación con el tamaño del texto, como por ejemplo el margen entre párrafos, el relleno interior de los blockquotes, etc.</td>
+            <td ></td>
+            <td>El problema de usar em es que se basa en herencias. Entonces si en una etiqueta p tengo un tamaño y establezco el mismo tamaño en la etiqueta strong por ejemplo, strong hereda el tamaño de p y lo suma. Entonces hay que estar recalculando todo el tiempo las medidas.</td>
+        </tr>
+
+        <tr class="columna-rem">
+            <td></center>REM</center></td>
+            <td>La unidad de medida REM es muy similar a EM, con la única diferencia de que no es escalable, esto quiere decir que no depende del elemento padre, sino del elemento raíz del documento, el elemento HTML. Rem significa «Root Em«, o sea, es un em basado en la raíz.</td>
+            <td>Con rem solucionamos esto. Rem significa Root em y se basa en que con sólo declarar el rem base a html las medidas siguientes no dependerán de la herencia sino del número base.</td>
+            <td></td>
+        </tr>
+
+        <tr class="columna-porcentaje">
+            <td></center>%</center></td>
+            <td>La unidad de medida porcentaje es la que se usa por defecto en los elementos HTML<br>en donde de manera predeterminada cada elemento de bloque usa un ancho del 100%, es por eso que cuando achicamos la ventana del navegador con una página que no tenga estilos, la página se adapta, ya que siempre usará el ancho total visible.</td>
+            <td>Al usar pixeles para definir las dimensiones de los objetos y los estilos de fuente no solo estamos definiendo tamaños rígidos, sino que también estamos ignorando las configuraciones que cada usuario pueda tener en su navegador.</td>
+            <td></td>
+        </tr>
+
+       
+        <tr class="columna-vw">
+            <td ></center>VW y VH</center></td>
+            <td>Las unidades relativas viewportwidth y viewportheight hacen referencia al ancho y al alto del área de la pantalla del navegador en los distintos dispositivos respectivamente. Se escriben “vw” y “vh” en css. Su medida equivale a la centésima parte de la anchura o altura de la “pantalla” de visualización.</td>
+            <td>Las ventajas que nos aportan cuando diseñamos nuestra página web, por un lado, la flexibilidad que nos da a la hora de diseñar páginas adaptables (“responsive”), ya que al tener unas unidades que mantienen las proporciones de manera constante en función del ancho o alto del área de la pantalla nos asegura que nuestros diseños se verán correctamente en cualquier dispositivo.<br>Otra de las grandes ventajas que nos aporta el uso de estas unidades, es cuando las aplicamos a la hora de dar medidas a las fuentes que utilizamos en nuestra web. Con el uso de estas medidas podemos olvidarnos de unidades porcentuales, “em” o “rem”, y nos aseguramos que veremos nuestras fuentes correctamente en cualquier dispositivo.</td> 
+             <td></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
